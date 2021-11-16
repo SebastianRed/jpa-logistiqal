@@ -1,8 +1,15 @@
+package cl.sebastianrojo.jpalogistiqal.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Product
  */
+@Entity
 public class Product {
 
+    @Id
     private Integer code;
     private String name;
     private Integer price;
